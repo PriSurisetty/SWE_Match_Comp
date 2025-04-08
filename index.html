@@ -114,6 +114,22 @@
                 <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
             </div>
 
+            <div class="form-group">
+                <label for="activityLevel">Typical Physical Activity Level:</label>
+                <select id="activityLevel" name="activityLevel" required>
+                    <option value="" disabled selected>Select your activity level</option>
+                    <option value="light">Light (e.g., slow walking, desk work)</option>
+                    <option value="moderate">Moderate (e.g., brisk walking, general gardening)</option>
+                    <option value="vigorous">Vigorous (e.g., running, competitive sports)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="specificActivity">Specific Regular Activity (optional):</label>
+                <input type="text" id="specificActivity" name="specificActivity" placeholder="e.g., Cycling at 12 mph">
+            </div>
+            
+
             <button type="submit">Submit</button>
         </form>
     </div>
