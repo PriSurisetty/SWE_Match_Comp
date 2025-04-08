@@ -77,6 +77,39 @@
             </div>
 
             <div class="form-group">
+                <label for="indoor/outdoor">Do you spend more time indoors or outdoors:</label>
+                <select id="in/out" name="in/out" required>
+                    <option value="" disabled selected>Select Indoors/Outdoors</option>
+                    <option value="male">Indoor</option>
+                    <option value="female">Outdoor</option>
+                    <option value="female">Equal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="humidity">How humid is your environment:</label>
+                <select id="himidity" name="humidity" required>
+                    <option value="" disabled selected>Select Humidity</option>
+                    <option value="male">Dry</option>
+                    <option value="female">Comfortable</option>
+                    <option value="female">Humid</option>
+                    <option value="female">Very Humid</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="humidity">What do average temperatures look like currently:</label>
+                <select id="temperature" name="temperature" required>
+                    <option value="" disabled selected>Select Temperature</option>
+                    <option value="male">Cold (50-65 degrees) </option>
+                    <option value="female">Cool (66-73 degrees)</option>
+                    <option value="female">Warm (74-82 degrees) </option>
+                    <option value="female">Hot (83 - 90) </option>
+                    <option value="female">Very Hot (91+)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label for="weight">Weight (in kg):</label>
                 <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
             </div>
