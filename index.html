@@ -33,7 +33,7 @@
             margin-bottom: 5px;
             color: #555;
         }
-        input {
+        input, select {
             width: 100%;
             padding: 10px;
             margin: 8px 0;
@@ -77,35 +77,35 @@
             </div>
 
             <div class="form-group">
-                <label for="indoor/outdoor">Do you spend more time indoors or outdoors:</label>
-                <select id="in/out" name="in/out" required>
+                <label for="inOut">Do you spend more time indoors or outdoors:</label>
+                <select id="inOut" name="inOut" required>
                     <option value="" disabled selected>Select Indoors/Outdoors</option>
-                    <option value="male">Indoor</option>
-                    <option value="female">Outdoor</option>
-                    <option value="female">Equal</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="equal">Equal</option>
                 </select>
             </div>
 
             <div class="form-group">
                 <label for="humidity">How humid is your environment:</label>
-                <select id="himidity" name="humidity" required>
+                <select id="humidity" name="humidity" required>
                     <option value="" disabled selected>Select Humidity</option>
-                    <option value="male">Dry</option>
-                    <option value="female">Comfortable</option>
-                    <option value="female">Humid</option>
-                    <option value="female">Very Humid</option>
+                    <option value="dry">Dry</option>
+                    <option value="comfortable">Comfortable</option>
+                    <option value="humid">Humid</option>
+                    <option value="veryHumid">Very Humid</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="humidity">What do average temperatures look like currently:</label>
+                <label for="temperature">What do average temperatures look like currently:</label>
                 <select id="temperature" name="temperature" required>
                     <option value="" disabled selected>Select Temperature</option>
-                    <option value="male">Cold (50-65 degrees) </option>
-                    <option value="female">Cool (66-73 degrees)</option>
-                    <option value="female">Warm (74-82 degrees) </option>
-                    <option value="female">Hot (83 - 90) </option>
-                    <option value="female">Very Hot (91+)</option>
+                    <option value="cold">Cold (50–65°F)</option>
+                    <option value="cool">Cool (66–73°F)</option>
+                    <option value="warm">Warm (74–82°F)</option>
+                    <option value="hot">Hot (83–90°F)</option>
+                    <option value="veryHot">Very Hot (91+°F)</option>
                 </select>
             </div>
 
@@ -123,12 +123,24 @@
                     <option value="vigorous">Vigorous (e.g., running, competitive sports)</option>
                 </select>
             </div>
-            
+
             <div class="form-group">
                 <label for="specificActivity">Specific Regular Activity (optional):</label>
                 <input type="text" id="specificActivity" name="specificActivity" placeholder="e.g., Cycling at 12 mph">
             </div>
-            
+
+            <div class="form-group">
+                <label for="healthCondition">Do you have any health conditions?</label>
+                <select id="healthCondition" name="healthCondition" required>
+                    <option value="" disabled selected>Select health condition</option>
+                    <option value="none">None</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="cardio">Cardiovascular Condition</option>
+                    <option value="asthma">Asthma</option>
+                    <option value="skin">Skin Sensitivity</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
             <button type="submit">Submit</button>
         </form>
