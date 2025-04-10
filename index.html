@@ -141,6 +141,7 @@
                     <option value="other">Other</option>
                 </select>
             </div>
+
             <div class="form-group">
                 <label for="adhesiveType">Adhesive Type:</label>
                 <select id="adhesiveType" name="adhesiveType" required>
@@ -154,6 +155,22 @@
                     <option value="other">Other</option>
                 </select>
             </div>
+
+            <!-- Age Range Dropdown -->
+            <div class="form-group">
+                <label for="age">Age Range:</label>
+                <select id="age" name="age" required>
+                    <option value="" disabled selected>Select Age Range</option>
+                    <option value="under18">Under 18</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46-55">46-55</option>
+                    <option value="56-65">56-65</option>
+                    <option value="66+">66 and above</option>
+                </select>
+            </div>
+
             <button type="submit">Submit</button>
         </form>
     </div>
